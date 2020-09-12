@@ -1,8 +1,4 @@
-     ASSIGNMENT-3
-
-
-
-Ques1
+Q1
 
 #include<unistd.h>
 #include<stdlib.h>
@@ -18,8 +14,6 @@ int main()
 
         if(pid==0)
         {
-                //child process
-          
                 cout<<"pid of child process----"<<getpid();
                 cout<<endl;
                 cout<<"ppid of child process----"<<getppid();
@@ -27,8 +21,6 @@ int main()
         }
         else if(pid>0)
         {
-                //parent process        
-   
                 cout<<"pid of parent process----"<<getpid();
                 cout<<endl;
                 cout<<"ppid of parent process----"<<getppid();
@@ -41,13 +33,7 @@ int main()
         return 0;
 }
 
-OUTPUT
-pid of parent process----10205
-ppid of parent process----27222
-pid of child process----10206
-ppid of child process----10205
-------------------------------------
-Q2.
+Q2
 
 #include<iostream>
 #include<unistd.h>
@@ -73,9 +59,6 @@ int main()
 return 0;
 }
 
-OUTPUT:
-another scheduling policy
----------------------------------
 Q3.
 
 #include<iostream>
@@ -97,9 +80,8 @@ int main()
         }
 return 0;
 }
-OUTPUT:
-priority not set
------------------------------
+
+
 Q4
 
 #include<iostream>
@@ -181,50 +163,3 @@ if( i== 0){
         cout<<"\n average turnaround time ="<<avgturnTime;
 return 0;
 }
-
-OUTPUT
-
-no of process=
-3
-
- enter the process 0 name = P1
- enter the process 0 arrival time = 0     
- enter the process 0 burst time = 3
-
- enter the process 1 name = P2
- enter the process 1 arrival time = 2
- enter the process 1 burst time = 5
-
- enter the process 2 name = P3
- enter the process 2 arrival time = 5
- enter the process 2 burst time = 6
-
- process no 1
- name P1
- arrival time 0
- burst time 3
- response time 0
- complete time 3
- waiting time 0
- turnaround time 3
-
- process no 2
- name P2
- arrival time 2
- burst time 5
- response time 3
-complete time 8
- waiting time 1
- turnaround time 6
-
- process no 3
- name P3
- arrival time 5
- burst time 6
- response time 8
- complete time 14
- waiting time 3
- turnaround time 9
-
- average waiting time = 1
- average turnaround time =6
